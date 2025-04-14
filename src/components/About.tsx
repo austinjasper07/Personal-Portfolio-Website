@@ -42,25 +42,25 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div>
                 <h4 className="font-heading font-semibold text-navy-900 dark:text-white">Name</h4>
-                <p className="text-gray-700 dark:text-gray-300">Ugochukwu Augustine Ugwu</p>
+                <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-base">Ugochukwu Ugwu</p>
               </div>
               <div>
                 <h4 className="font-heading font-semibold text-navy-900 dark:text-white">Email</h4>
-                <p className="text-gray-700 dark:text-gray-300">austinjasper07@gmail.com</p>
+                <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-base">austinjasper07@gmail.com</p>
               </div>
               <div>
                 <h4 className="font-heading font-semibold text-navy-900 dark:text-white">Location</h4>
-                <p className="text-gray-700 dark:text-gray-300">Lagos, Nigeria</p>
+                <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-base">Lagos, Nigeria</p>
               </div>
               <div>
                 <h4 className="font-heading font-semibold text-navy-900 dark:text-white">Availability</h4>
-                <p className="text-gray-700 dark:text-gray-300">Freelance / Full-time</p>
+                <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-base">Freelance / Full-time</p>
               </div>
             </div>
             
             <Button asChild variant="outline" className="mt-8 rounded-full" size="lg">
-              <a href="https://drive.google.com/file/d/14Vh9hA44mw0Dr3L9P2NGNIziIcFY592f/view?usp=drive_link" download>
-                <FileText className="mr-2 h-4 w-4" /> Download CV
+              <a target="_blank" href="https://drive.google.com/file/d/14Vh9hA44mw0Dr3L9P2NGNIziIcFY592f/view" download>
+                <FileText className="mr-2 h-4 w-4 " /> Download CV
               </a>
             </Button>
           </div>

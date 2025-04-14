@@ -13,12 +13,13 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="text-center md:text-left md:flex md:items-center md:justify-between">
           <div className="md:max-w-2xl lg:max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold tracking-tight text-navy-900 dark:text-white">
+            <h1 className="text-4xl sm:text-4xl md:text-5xl font-heading font-bold tracking-tight text-navy-900 dark:text-white">
               <span className="relative inline-block">
                 <span className="relative animate-wave inline-block mr-2">👋</span> 
-                Hi, I'm{" "}
+                Hi, I'm 
               </span>
-              <span className="relative mt-2 inline-block text-transparent bg-clip-text animated-gradient">Ugochukwu Ugwu</span>
+              {" "}
+              <span className="relative mt-2 mb-2 inline-block text-transparent bg-clip-text animated-gradient ">Ugochukwu Ugwu</span>
             </h1>
             
             <p className="mt-6 text-xl md:text-2xl leading-relaxed text-gray-600 dark:text-gray-300 md:max-w-xl">

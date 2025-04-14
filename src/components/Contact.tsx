@@ -2,30 +2,11 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Send,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Github,
-} from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import Follow from "./ui/follow";
 
-const ContactCard = ({
-  icon: Icon,
-  title,
-  value,
-  link,
-}: {
-  icon: React.ElementType;
-  title: string;
-  value: string;
-  link?: string;
-}) => {
+const ContactCard = ({ icon: Icon, title, value, link }: { icon: any; title: any; value: any; link?: any }) => {
   return (
     <div className="flex items-start space-x-4">
       <div className="bg-primary/10 w-12 h-12 flex items-center justify-center rounded-full shrink-0">
@@ -60,18 +41,15 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     setTimeout(() => {
       toast({
         title: "Message sent!",
