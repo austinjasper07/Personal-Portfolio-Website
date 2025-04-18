@@ -13,7 +13,7 @@ export default function Follow() {
         <Facebook className="h-5 w-5" />
       </a>
       <a
-        href="https://twitter.com/your-profile"
+        href="https://x.com/aus_ugo"
         target="_blank"
         rel="noopener noreferrer"
         className="w-10 h-10 rounded-full bg-gray-100 dark:bg-navy-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-colors"
@@ -21,7 +21,7 @@ export default function Follow() {
         <Twitter className="h-5 w-5" />
       </a>
       <a
-        href="https://linkedin.com/in/your-profile"
+        href="https://www.linkedin.com/in/ugochukwu-ugwu-424315263/"
         target="_blank"
         rel="noopener noreferrer"
         className="w-10 h-10 rounded-full bg-gray-100 dark:bg-navy-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-colors"
@@ -29,7 +29,7 @@ export default function Follow() {
         <Linkedin className="h-5 w-5" />
       </a>
       <a
-        href="https://github.com/your-profile"
+        href="https://github.com/austinjasper07"
         target="_blank"
         rel="noopener noreferrer"
         className="w-10 h-10 rounded-full bg-gray-100 dark:bg-navy-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-colors"

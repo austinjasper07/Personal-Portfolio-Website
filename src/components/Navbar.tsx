@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import DarkModeToggle from "@/components/ui/darkMode";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,7 +65,7 @@ const Navbar = () => {
               </Button>
             </div>
           </div>
-
+          <DarkModeToggle />
           <div className="flex md:hidden">
             <button
               onClick={toggleMenu}
