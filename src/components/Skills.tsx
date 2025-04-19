@@ -1,9 +1,9 @@
 
 import { Badge } from "@/components/ui/badge";
-import { 
-  Code, Server, Paintbrush, Database, 
-  Search, LayoutGrid, GitBranch, Settings 
-} from "lucide-react";
+import { skillCategories } from "@/assests/data";
+
+import {getSkills} from "@/lib/firebase";
+import { useEffect } from "react";
 
 const SkillCard = ({ 
   title, 
@@ -16,6 +16,7 @@ const SkillCard = ({
   icon: React.ElementType; 
   skills: string[] 
 }) => {
+
   return (
     <div className="bg-white dark:bg-navy-700 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="bg-primary/10 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
@@ -35,50 +36,7 @@ const SkillCard = ({
 };
 
 const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Frontend Development",
-      description: "Building responsive, accessible web interfaces with modern frameworks",
-      icon: Code,
-      skills: ["React", "JavaScript", "TypeScript", "Next.js", "SASS", "Tailwind CSS", "HTML5/CSS3"]
-    },
-    {
-      title: "Backend Development",
-      description: "Creating robust server-side applications and APIs",
-      icon: Server,
-      skills: ["Node.js", "Express", "Python", "RESTful APIs", ".Net", "GraphQL"]
-    },
-    {
-      title: "Database Management",
-      description: "Working with various database systems for optimal data storage",
-      icon: Database,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis"]
-    },
-    {
-      title: "SEO Optimization",
-      description: "Improving website visibility and search engine rankings",
-      icon: Search,
-      skills: ["On-page SEO", "Performance Optimization", "Analytics", "Metadata", "Accessibility"]
-    },
-    {
-      title: "Web Performance",
-      description: "Optimizing websites for speed and efficiency",
-      icon: LayoutGrid,
-      skills: ["Lazy Loading", "Code Splitting", "Caching", "CDN Integration", "Core Web Vitals"]
-    },
-    {
-      title: "Version Control",
-      description: "Managing code changes and collaborating with teams",
-      icon: GitBranch,
-      skills: ["Git", "GitHub", "GitLab", "Collaborative Workflows", "CI/CD"]
-    },
-    {
-      title: "DevOps",
-      description: "Streamlining development operations and deployment processes",
-      icon: Settings,
-      skills: ["Docker", "AWS", "Vercel", "Netlify", "Continuous Integration"]
-    }
-  ];
+  
 
   return (
     <section id="skills" className="py-24 mx-auto bg-gray-50 dark:bg-navy-800">

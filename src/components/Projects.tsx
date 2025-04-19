@@ -1,17 +1,18 @@
 
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import { projects } from "@/assests/data"; // Assuming you have a projects data file
 
-interface ProjectProps {
-  title: string;
-  description: string;
-  image: string;
-  tags: string[];
-  demoLink: string;
-  githubLink: string;
-}
+// interface ProjectProps {
+//   title: string;
+//   description: string;
+//   image: string;
+//   tags: string[];
+//   demoLink: string;
+//   githubLink: string;
+// }
 
-const ProjectCard = ({ project }: { project: ProjectProps }) => {
+const ProjectCard = ({ project }) => {
   return (
     <div className="group bg-white dark:bg-navy-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
       <div className="relative overflow-hidden h-64">
@@ -58,56 +59,7 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
 };
 
 const Projects = () => {
-  const projects: ProjectProps[] = [
-    {
-      title: "E-Commerce Platform",
-      description: "A full-featured online shopping platform with cart, checkout, and payment integration",
-      image: "/placeholder.svg",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      title: "Task Management App",
-      description: "A productivity app for managing tasks, projects, and team collaboration",
-      image: "/placeholder.svg",
-      tags: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      title: "Portfolio Website",
-      description: "A custom portfolio website template for creative professionals",
-      image: "/placeholder.svg",
-      tags: ["React", "Framer Motion", "Sass", "Responsive Design"],
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A weather application showing forecasts, historical data and interactive maps",
-      image: "/placeholder.svg",
-      tags: ["JavaScript", "Chart.js", "OpenWeather API", "Leaflet"],
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      title: "Recipe Finder",
-      description: "Search and discover recipes based on ingredients, dietary preferences, and cuisine types",
-      image: "/placeholder.svg",
-      tags: ["React", "Redux", "Spoonacular API", "Styled Components"],
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      title: "Fitness Tracker",
-      description: "An application to track workouts, progress, and health metrics",
-      image: "/placeholder.svg",
-      tags: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
-      demoLink: "#",
-      githubLink: "#"
-    }
-  ];
+ 
 
   return (
     <section id="projects" className="py-24 bg-gray-50 dark:bg-navy-900">

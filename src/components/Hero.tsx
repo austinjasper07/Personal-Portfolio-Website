@@ -19,7 +19,7 @@ const Hero = () => {
                 Hi, I'm 
               </span>
               {" "}
-              <span className="relative mt-2 mb-2 inline-block text-transparent bg-clip-text animated-gradient ">Ugochukwu Ugwu</span>
+              <span className="relative mt-2 mb-2 inline-block text-transparent bg-clip-text animated-gradient ">Ugochukwu Augustine Ugwu</span>
             </h1>
             
             <p className="mt-6 text-xl md:text-2xl leading-relaxed text-gray-600 dark:text-gray-300 md:max-w-xl">

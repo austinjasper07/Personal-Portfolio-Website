@@ -45,7 +45,7 @@ const Navbar = () => {
               href="#home"
               className="text-xl font-heading font-bold tracking-tight text-navy-900 dark:text-white"
             >
-              Ugochukwu Ugwu
+              Ugochukwu Augustine Ugwu
             </a>
           </div>
 
