@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-base md:text-2xl font-heading font-bold">Ugochukwu Augustine Ugwu</h2>
+            <h2 className="text-sm md:text-xl lg:text-2xl font-heading font-bold">Ugochukwu Augustine Ugwu</h2>
             <p className="text-gray-400 mt-2">Software, Mobile & Web Developer</p>
           </div>
           
